@@ -1,59 +1,133 @@
-# Heart-Disease-Detection-using-ML
+# ❤️ Heart Disease Detection System
 
-This project predicts whether a person is likely to have heart disease or not, based on medical parameters using **Logistic Regression**. It's an AI/ML project built in Python with added visualizations using **Matplotlib** and **Seaborn**.
+An AI-powered Heart Disease Prediction Web Application built using Python, Streamlit, Scikit-learn, and Gemini AI.
 
----
-
-## 📊 Dataset
-
-- The dataset used is `data.csv`, containing patient health-related data like:
-  - Age, Sex, Chest Pain Type
-  - Cholesterol, Fasting Blood Sugar
-  - Resting ECG, Heart Rate, Exercise Induced Angina
-  - ST Depression, Slope, Number of Major Vessels, Thal
-- The target column indicates whether heart disease is present (`1`) or not (`0`).
+The application predicts the possibility of heart disease using multiple Machine Learning models and provides AI-generated medical insights with interactive visualizations.
 
 ---
 
-## 💻 Technologies Used
+#  Features
 
-- Python 🐍
-- Pandas, NumPy
-- Scikit-learn (Logistic Regression)
-- Matplotlib & Seaborn (Data Visualization)
-- Google Colab
-- Git & GitHub
-
----
-
-## 🔍 Features
-
-- Logistic Regression-based binary classification
-- Train-test split with stratified sampling
-- Accuracy score display
-- Data visualizations:
-  - Target variable distribution
-  - Correlation heatmap
-  - Prediction vs Actual comparison
-- Input-based custom detection for new patients
+- Heart Disease Prediction using Machine Learning
+- Multiple ML Models:
+  - Logistic Regression
+  - Random Forest
+  - Gradient Boosting
+  - Support Vector Machine (SVM)
+- Gemini AI Medical Analysis
+- SHAP Feature Importance Visualization
+- ROC Curve Visualization
+- Confusion Matrix
+- Interactive Streamlit Dashboard
+- Dataset Analysis & Correlation Heatmap
+- Model Comparison Dashboard
+- Risk Probability Score
 
 ---
 
-## ⚙️ How to Use
+# Technologies Used
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/shellyverma/Heart-Disease-Detection-using-ML
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SHAP
+- Google Gemini AI
+- Python Dotenv
 
-  ---
+---
 
-## 📚 Acknowledgement
+# Project Structure
 
-This project is inspired by tutorials from [GeeksforGeeks](https://www.geeksforgeeks.org/) and the YouTube video [Heart Disease Detection Project](https://youtu.be/F_9gGyCs3YY?si=bOAX_kk548IgneNr).  
-Special thanks to the original creators for their guidance.
+```bash
+Heart-Disease-Detection-using-ML/
+│
+├── app.py
+├── requirements.txt
+├── .gitignore
+├── README.md
+│
+├── data/
+│   └── heart_disease_data.csv
+│
+├── models/
+│   └── train_models.py
+│
+├── utils/
+│   ├── gemini_helper.py
+│   ├── preprocessing.py
+│   ├── plots.py
+│   └── shap_analysis.py
+```
 
-I have enhanced the project by:
-- Adding custom visualizations using **Matplotlib** and **Seaborn**
-- Improving user flow for input prediction
-- Polishing the notebook structure and formatting for better understanding
+---
 
+# Dashboard Sections
+
+## 🔍 Predict + AI Analysis
+- Patient heart disease prediction
+- Risk probability score
+- AI-generated medical insight
+
+## Data Analysis
+- Correlation heatmap
+- Dataset overview
+- Patient statistics
+
+## Model Comparison
+- Accuracy comparison
+- Precision, Recall, F1 Score
+- ROC AUC comparison
+
+## Model Evaluation
+- Confusion Matrix
+- ROC Curve
+- SHAP Feature Importance
+
+---
+
+# Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shellyverma/Heart-Disease-Detection-using-ML.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# Deployment
+
+Deployed using Streamlit Community Cloud.
+
+---
+
+---
+
+# Acknowledgement
+
+The initial idea and base implementation of this project were inspired by machine learning tutorials and educational resources from GeeksForGeeks and YouTube.
+
+The project was later redesigned and enhanced with:
+- Streamlit Web Application
+- Multiple ML Models
+- Gemini AI Integration
+- SHAP Explainability
+- ROC Curve Visualization
+- Modular Project Structure
+- Interactive Dashboards and UI Improvements
